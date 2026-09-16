@@ -10,12 +10,12 @@
 /// assert_eq!(result,10);
 /// ```
 pub fn counter() -> i32 {
-    let mut count = 1;
+    let mut count = 0;
 
     // Counts to 10 and prints each value. Increases value
     // by 1 each loop
-    while count <= 10 {
-        count + 1;
+    while count < 10 {
+        count +=1;
         println!("Count: {}", count)
     }
 
